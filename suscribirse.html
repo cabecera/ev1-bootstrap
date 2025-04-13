@@ -8,12 +8,15 @@
     <meta name="generator" content="Hugo 0.84.0">
     <title>Suscripcion</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/pricing/">
+    <!-- Es para trabajar con SEO y los motores de busqueda, pero se dirige a la pagina de bootstrap no al mio -->
+    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/pricing/"> -->
+
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="blog.css" rel="stylesheet">
 
 
-
+    <!-- DISEÑO DE PLANTILLA. QUITA EL DISEÑO DEL .CSS QUE TENIAMOS
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -29,194 +32,188 @@
         }
       }
     </style>
+    -->
 
 
-    <!-- Custom styles for this template -->
-    <link href="blog.css" rel="stylesheet">
   </head>
   <body>
+    <div class="container py-3">
 
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-  <symbol id="check" viewBox="0 0 16 16">
-    <title>Check</title>
-    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-  </symbol>
-</svg>
+      <header>
+        <!-- Parte superior -->
+        <div class="container">
+            <header class="blog-header py-3">
+              <div class="row align-items-center">
+                  <div class="col-12 col-md-4 text-center text-md-start mb-2 mb-md-0">
+                    <a class="link-secondary" href="#"> </a>
+                  </div>
+                  <div class="col-12 col-md-4 text-center mb-2 mb-md-0">
+                    <a class="blog-header-logo text-dark fs-4 fw-bold" href="index.html">Checkpoint</a>
+                  </div>
+                  <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end align-items-center">
+                    <a class="link-secondary me-3" href="#" aria-label="Buscar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"
+                            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="mx-1" role="img" viewBox="0 0 24 24">
+                        <title>Buscar</title>
+                        <circle cx="10.5" cy="10.5" r="7.5"/>
+                        <path d="M21 21l-5.2-5.2"/>
+                        </svg>
+                    </a>
+                    <a class="btn btn-sm btn-outline-secondary" href="suscribirse.html">Suscribete</a>
+                  </div>
+              </div>
+            </header>
 
-<header>
-  <div class="container">
-      <header class="blog-header py-3">
-      <div class="row align-items-center">
-          <div class="col-12 col-md-4 text-center text-md-start mb-2 mb-md-0">
-          <a class="link-secondary" href="#"> </a>
-          </div>
-          <div class="col-12 col-md-4 text-center mb-2 mb-md-0">
-          <a class="blog-header-logo text-dark fs-4 fw-bold" href="index.html">Checkpoint</a>
-          </div>
-          <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end align-items-center">
-          <a class="link-secondary me-3" href="#" aria-label="Buscar">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"
-                  stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                  stroke-width="2" class="mx-1" role="img" viewBox="0 0 24 24">
-              <title>Buscar</title>
-              <circle cx="10.5" cy="10.5" r="7.5"/>
-              <path d="M21 21l-5.2-5.2"/>
-              </svg>
-          </a>
-          <a class="btn btn-sm btn-outline-secondary" href="suscribirse.html">Suscribete</a>
-          </div>
-      </div>
+            <!-- NAVBAR -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light rounded mb-3">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="juegos.html">Juegos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Guías y Estrategias</a></li>
+                </ul>
+                </div>
+            </div>
+            </nav>
+        </div>
       </header>
+      <!-- Parte media -->
+      <main>
+        <!-- Primer card -->
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Free</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mes</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>- Acceso a noticias diarias sobre videojuegos y tecnología.</li>
+                  <li>- Contenido exclusivo gratuito cada mes.</li>
+                  <li>- Participación en sorteos comunitarios.</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-outline-primary">Suscribirse gratis</button>
+              </div>
+            </div>
+          </div>
+        <!-- Segundo card -->
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Pro</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$5.500<small class="text-muted fw-light">/mes</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>- Todo lo del plan gratuito.</li>
+                  <li>- Acceso anticipado a análisis y reviews.</li>
+                  <li>- Invitaciones a eventos virtuales exclusivos.</li>
+                  <li>- Contenido premium descargable (wallpapers, guías, etc.).</li>
+                  <li>- Soporte prioritario por correo.</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-primary">Se un Pro!</button>
+              </div>
+            </div>
+          </div>
+        <!-- Teercer card -->
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+              <div class="card-header py-3 text-white bg-primary border-primary">
+                <h4 class="my-0 fw-normal">Super PRO</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$10.000<small class="text-muted fw-light">/mes</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>- Todo lo del plan Premium.</li>
+                  <li>- Acceso exclusivo a contenido detrás de cámaras.</li>
+                  <li>- Sesiones Q&A en vivo con nuestro equipo editorial.</li>
+                  <li>- Merchandising digital exclusivo cada mes.</li>
+                  <li>- Participación garantizada en todos los sorteos.</li>
+                  <li>- Reconocimiento especial en la comunidad.</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-primary">Heroe!</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light rounded mb-3">
-      <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                  aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-              <li class="nav-item"><a class="nav-link" href="juegos.html">Juegos</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Noticias</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Guías y Estrategias</a></li>
-          </ul>
-      </div>
-      </div>
-  </nav>
-  </div>
-</header>
+        <!-- Titulo comparacion -->
+        <h2 class="display-6 text-center mb-4">Comparar planes</h2>
 
-    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-      <h1 class="display-4 fw-normal">Precios</h1>
-      <p class="fs-5 text-muted">Suscríbete para recibir las últimas noticias del mundo gamer y tecnológico directamente en tu correo. Mantente al día con lanzamientos, reseñas, ofertas especiales y novedades exclusivas de la industria. ¡Únete a nuestra comunidad y no te pierdas ninguna actualización!</p>
+        <!-- Tababla de comparacion -->
+        <div class="table-responsive">
+          <table class="table text-center">
+            <thead>
+              <tr>
+                <th style="width: 34%;"></th>
+                <th style="width: 22%;">Gratis</th>
+                <th style="width: 22%;">Pro</th>
+                <th style="width: 22%;">Super PRO</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="text-start">Público</th>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Privado</th>
+                <td></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              </tr>
+            </tbody>
 
+            <tbody>
+              <tr>
+                <th scope="row" class="text-start">Permisos</th>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Compartir</th>
+                <td></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Miembros ilimitados</th>
+                <td></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Seguridad avanzada</th>
+                <td></td>
+                <td></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </main>
+
+    <!-- Parte baja -->
+      <footer class="pt-4 my-md-5 pt-md-5 border-top">
+
+        <a href="https://github.com/cigna26"><p>Github</p></a>
+
+      </footer>
     </div>
-  </header>
 
-  <main>
-    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Free</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mes</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>- Acceso a noticias diarias sobre videojuegos y tecnología.</li>
-              <li>- Contenido exclusivo gratuito cada mes.</li>
-              <li>- Participación en sorteos comunitarios.</li>
-            </ul>
-            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Suscribirse gratis</button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Pro</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$5.500<small class="text-muted fw-light">/mes</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>- Todo lo del plan gratuito.</li>
-              <li>- Acceso anticipado a análisis y reviews.</li>
-              <li>- Invitaciones a eventos virtuales exclusivos.</li>
-              <li>- Contenido premium descargable (wallpapers, guías, etc.).</li>
-              <li>- Soporte prioritario por correo.</li>
-            </ul>
-            <button type="button" class="w-100 btn btn-lg btn-primary">Se un Pro!</button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm border-primary">
-          <div class="card-header py-3 text-white bg-primary border-primary">
-            <h4 class="my-0 fw-normal">Super PRO</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$10.000<small class="text-muted fw-light">/mes</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>- Todo lo del plan Premium.</li>
-              <li>- Acceso exclusivo a contenido detrás de cámaras.</li>
-              <li>- Sesiones Q&A en vivo con nuestro equipo editorial.</li>
-              <li>- Merchandising digital exclusivo cada mes.</li>
-              <li>- Participación garantizada en todos los sorteos.</li>
-              <li>- Reconocimiento especial en la comunidad.</li>
-            </ul>
-            <button type="button" class="w-100 btn btn-lg btn-primary">Heroe!</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <h2 class="display-6 text-center mb-4">Comparar planes</h2>
-
-<div class="table-responsive">
-  <table class="table text-center">
-    <thead>
-      <tr>
-        <th style="width: 34%;"></th>
-        <th style="width: 22%;">Gratis</th>
-        <th style="width: 22%;">Pro</th>
-        <th style="width: 22%;">Super PRO</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row" class="text-start">Público</th>
-        <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-        <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-        <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-      </tr>
-      <tr>
-        <th scope="row" class="text-start">Privado</th>
-        <td></td>
-        <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-        <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-      </tr>
-    </tbody>
-
-    <tbody>
-      <tr>
-        <th scope="row" class="text-start">Permisos</th>
-        <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-        <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-        <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-      </tr>
-      <tr>
-        <th scope="row" class="text-start">Compartir</th>
-        <td></td>
-        <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-        <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-      </tr>
-      <tr>
-        <th scope="row" class="text-start">Miembros ilimitados</th>
-        <td></td>
-        <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-        <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-      </tr>
-      <tr>
-        <th scope="row" class="text-start">Seguridad avanzada</th>
-        <td></td>
-        <td></td>
-        <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-  </main>
-
-  <footer class="pt-4 my-md-5 pt-md-5 border-top">
-    <a href="https://github.com/cigna26"><p>Github</p></a>
-  </footer>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
   </body>
 </html>
